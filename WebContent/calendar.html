@@ -1,0 +1,283 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/calendar.css" />
+<script src="./js/jquery-3.3.1.min.js"></script>
+<title>MBS</title>
+</head>
+<body>
+		<div class="header-wrap clearfix">
+				<div class="header">
+					<div onclick="javascript: location.href='./main.html'" class="logo">
+						<img src="./images/w_logo.png" alt="로고" />
+					</div>
+					<div class="sns-link">
+						<ul class="clearfix">
+							<li><a href="javascript: location.href='./main.html'"><img src="./images/footer_i_2.png" alt="아이콘" /></a></li>
+							<li><a href="javascript: location.href='./main.html'"><img src="./images/footer_i_1.png" alt="아이콘" /></a></li>
+							<li><a href="javascript: location.href='./main.html'"><img src="./images/footer_i_3.png" alt="아이콘" /></a></li>
+						</ul>
+					</div>
+					<header class="web-header">
+						<nav>
+							<ul class="clearfix">
+								<li><a href="javascript: location.href='./main_add.html'">MBS 소개</a></li>
+								<li><a href="javascript: location.href='./notice.html'">공지사항</a></li>
+								<li><a href="javascript: location.href='./news.html'">뉴스</a></li>
+								<li><a href="javascript: location.href='./article.html'">컨텐츠</a></li>
+								<li><a href="javascript: location.href='./calendar.html'">캘린더</a></li>
+							</ul>
+						</nav>
+					</header>
+				</div>
+			</div>
+			
+			<header class="m-header">
+				<div class="m-header-wrap clearfix">
+					<img onclick="javascript: location.href='./main.html'" class="m-logo" src="./images/m_logo.png" alt="로고" />
+					<img class="menu-i" src="./images/m_menu.png" alt="메뉴" />
+				</div>
+				<div class="menu-wrap">
+					<div class="img-wrap clearfix">
+						<img class="m-logo-img" src="./images/m_logo.png" alt="로고" /> 
+						<img class="menu-i" src="./images/m_menu.png" alt="메뉴" />
+					</div>
+					<nav class="menu-list">
+						<ul>
+							<li class="list clearfix"><a href="javascript: location.href='./main_add.html'"><span class="contents">MBS 소개</span><div class="line-wrap"></div></a></li>
+							<li class="list clearfix"><a href="javascript: location.href='./notice.html'"><span class="contents">공지사항</span><div class="line-wrap"></div></a></li>
+							<li class="list clearfix"><a href="javascript: location.href='./news.html'"><span class="contents">뉴스</span><div class="line-wrap"></div></a></li>
+							<li class="list clearfix"><a href="javascript: location.href='./article.html'"><span class="contents">컨텐츠</span><div class="line-wrap"></div></a></li>
+							<li class="list clearfix"><a href="javascript: location.href='./calendar.html'"><span class="contents">캘린더</span><div class="line-wrap"></div></a></li>
+						</ul>
+						<div class="footer">
+							<ul class="sns-link clearfix">
+								<li><a href="#"><img src="./images/m_h_kaka.png" alt="텔레그램" /></a></li>
+								<li><a href="#"><img src="./images/m_h_twi.png" alt="트위터" /></a></li>
+								<li><a href="#"><img src="./images/m_h_m.png" alt="mbs" /></a></li>
+							</ul>
+							<p>Copyright © 2018 micro blood science</p>
+						</div>
+					</nav>
+				</div>
+			</header>
+	<section class="calendar">
+			<div class="content">
+				<div class="wrap">
+					<div class="title-wrap clearfix">
+						<div class="title-box">
+							<button class="pre-btn"><img src="./images/calendar_btn.png" alt="왼쪽" /></button>
+							<h1>2018.10</h1>
+							<button class="next-btn"><img src="./images/calendar_btn.png" alt="왼쪽" /></button>
+						</div>
+					</div>
+					<p class="line"></p>
+					<table class="calendar-table">
+						<thead>
+							<tr>
+								<th class="red">S</th>
+								<th>M</th>
+								<th>T</th>
+								<th>W</th>
+								<th>T</th>
+								<th>F</th>
+								<th class="blue">S</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span class="red">1</span>
+								</td>
+								<td>
+									<span class="on">1</span>
+									<div class="text">
+										<p>One Year Anniversary Meet</p>
+										<p>One Year Anniversary Meet</p>
+									</div>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span class="blue">1</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="red">1</span>
+								</td>
+								<td>
+									<span class="on">1</span>
+									<div class="text">
+										<p>One Year Anniversary Meet</p>
+										<p>One Year Anniversary Meet</p>
+									</div>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span class="blue">1</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="red">1</span>
+								</td>
+								<td>
+									<span class="on">1</span>
+									<div class="text">
+										<p>One Year Anniversary Meet</p>
+										<p>One Year Anniversary Meet</p>
+									</div>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span class="blue">1</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="red">1</span>
+								</td>
+								<td>
+									<span>1</span>
+									<div class="text">
+									</div>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span class="blue">1</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="schedule-list">
+						<p>일별 스케쥴</p>
+						<div class="list-wrap clearfix">
+							<ul class="left">
+								<li class="clearfix">
+									<div class="date">
+										<span>2018.10.01</span>
+									</div>
+									<div class="contents">
+										<span>One Year Anniversary Meet</span>
+									</div>
+									<div class="d-day">
+										<span>D - 20</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="right">
+								<li class="clearfix">
+									<div class="date">
+										<span>2018.10.01</span>
+									</div>
+									<div class="contents">
+										<span>One Year Anniversary Meet</span>
+									</div>
+									<div class="d-day">
+										<span>D - 20</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="more-wrap">
+						<a href="#"><img src="./images/more.png" alt="더보기 버튼" />일별 스케쥴 더보기</a>
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<div class="content clearfix">
+			<span>Copyright © 2018 micro blood science</span>
+			<ul class="clearfix">
+				<li><a href="#"><img src="./images/footer_i_1.png" alt="트위터 바로가기" /></a></li>
+				<li><a href="#"><img src="./images/footer_i_2.png" alt="mbs 바로가기" /></a></li>
+				<li><a href="#"><img src="./images/footer_i_3.png" alt="카카오톡 바로가기" /></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script>
+        // 메뉴스크립트 
+        var menu = $(".menu-i");
+    	var menuWrap = $(".menu-wrap");
+    	var list = $(".list");
+    	var lineWrap = $(".line-wrap");
+   		
+        menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	menuWrap.removeClass("active");
+            	logo.removeClass("active");
+            	header.removeClass("active");
+            } else {
+            	menu.addClass("active");
+            	menuWrap.addClass("active");
+            	logo.addClass("active");
+            	header.addClass("active");
+            }
+        });
+        
+        lineWrap.on("click", function () {
+            if (lineWrap.hasClass("active")) {
+            	lineWrap.removeClass("active");
+            } else {
+            	lineWrap.addClass("active");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+
+	String menu = request.getParameter("menu");
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/m_header.css" />
+<title>MBS</title>
+</head>
+<body>
+	<header class="m-header">
+		<div class="m-header-wrap clearfix">
+			<img onclick="javascript: location.href='main.mbs?menu=main'" class="m-logo" src="./images/back.png" alt="로고" />
+			<span>공지사항</span>
+			<img class="menu-i" src="./images/m_menu.png" alt="메뉴" />
+		</div>
+		<div class="menu-wrap">
+			<div class="img-wrap clearfix">
+				<img class="m-logo-img" src="./images/m_logo.png" alt="로고" /> 
+				<img class="menu-i" src="./images/m_menu.png" alt="메뉴" />
+			</div>
+			<nav class="menu-list">
+				<ul>
+					<li class="list clearfix"><a href="javascript: location.href='main.mbs?menu=main_add'"><span class="contents">MBS 소개</span><div class="line-wrap"></div></a></li>
+					<li class="list clearfix"><a href="javascript: location.href='main.mbs?menu=notice'"><span class="contents">공지사항</span><div class="line-wrap"></div></a></li>
+					<li class="list clearfix"><a href="javascript: location.href='main.mbs?menu=news'"><span class="contents">뉴스</span><div class="line-wrap"></div></a></li>
+					<li class="list clearfix"><a href="javascript: location.href='main.mbs?menu=article'"><span class="contents">컨텐츠</span><div class="line-wrap"></div></a></li>
+					<li class="list clearfix"><a href="javascript: location.href='main.mbs?menu=calendar'"><span class="contents">캘린더</span><div class="line-wrap"></div></a></li>
+				</ul>
+				<div class="footer">
+					<ul class="sns-link clearfix">
+						<li><a href="#"><img src="./images/m_h_kaka.png" alt="텔레그램" /></a></li>
+						<li><a href="#"><img src="./images/m_h_twi.png" alt="트위터" /></a></li>
+						<li><a href="#"><img src="./images/m_h_m.png" alt="mbs" /></a></li>
+					</ul>
+					<p>Copyright © 2018 micro blood science</p>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<script>
+        // 메뉴스크립트 
+        var menu = $(".menu-i");
+    	var menuWrap = $(".menu-wrap");
+    	var list = $(".list");
+    	var lineWrap = $(".line-wrap");
+   		
+        menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	menuWrap.removeClass("active");
+            	logo.removeClass("active");
+            	header.removeClass("active");
+            } else {
+            	menu.addClass("active");
+            	menuWrap.addClass("active");
+            	logo.addClass("active");
+            	header.addClass("active");
+            }
+        });
+        
+        lineWrap.on("click", function () {
+            if (lineWrap.hasClass("active")) {
+            	lineWrap.removeClass("active");
+            } else {
+            	lineWrap.addClass("active");
+            }
+        });
+    </script>
+</body>
+</html>

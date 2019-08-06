@@ -1,0 +1,235 @@
+/* header ���� */
+.header-wrap {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #171c61;
+}
+.header-wrap .logo {
+	float: left;
+	width: 122px;
+	height: 100%;
+	margin-left: 5.2%;
+}
+.header-wrap .logo img {
+	width: 122px;
+	margin-top: 17px;
+}
+.header-wrap .sns-link {
+	height: 100%;
+	float: right;
+	margin-right: 5.2%;
+}
+.header-wrap .sns-link ul {
+	width: 95px;
+	margin: 0 auto;
+}   
+.header-wrap .sns-link li {
+	float: left;
+	height: 79px;
+	line-height: 79px;
+}
+.header-wrap .sns-link li:nth-child(-n+2) {
+	margin-right: 10px;
+}
+.header-wrap .sns-link li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.header-wrap .sns-link li a img {
+	width: 25px;
+	vertical-align: middle;
+}
+.header-wrap .header {
+	position: relative;
+}
+.web-header {
+	max-width: 1920px;
+	width: 52%;
+	height: 79px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #171c61;
+}
+.web-header nav {
+	height: 100%;
+	margin: 0 auto;
+}
+.web-header nav ul {
+	height: 100%;
+	line-height: 79px;
+	margin: 0 auto;
+}
+.web-header nav ul li {
+	width: 20%;
+	float: left;
+	position: relative;
+}
+.web-header nav ul li::after {
+	content: "";
+	display: block;
+	margin: auto;
+	height: 5px;
+	width: 0;
+	margin-top: -6px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.web-header nav ul li:hover::after {
+	width: 100%;
+	background: #fff;
+}
+.web-header nav ul li.active::after {
+	width: 100%;
+	background: #fff;
+}
+.web-header nav ul li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-family: 'NotoSansCJKkr-Regular','sans-serif';
+}
+/* m-header ���� */
+.m-header {
+	display: none;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 997;
+	background-color: #171c61;
+}
+.m-header .m-header-wrap {
+	width: 88.8%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 998;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.m-header .m-header-wrap .m-logo {
+	width: 195px;
+	float: left;
+}
+.m-header .m-header-wrap .menu-i {
+	width: 24px;
+	float: right;
+}
+.m-header .menu-wrap {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: -100%;
+	z-index: 998;
+	transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; 
+	background-color: #171c61;
+}
+.m-header .menu-wrap .img-wrap {
+	width: 88.8%;
+	margin: 0 auto;
+	height: 60px;
+	position: relative;
+}
+.m-header .menu-wrap .m-logo-img {
+	width: 195px;
+	position:absolute;
+	top: 50%;
+	left: 0; 
+	transform: translateY(-50%);
+}
+.m-header .menu-wrap .menu-i {
+	width: 24px;
+	position:absolute;
+	top: 50%;
+	right: 0; 
+	transform: translateY(-50%);
+}
+.m-header .menu-wrap .menu-list {
+	width: 88.8%;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 80px;
+}
+.m-header .menu-wrap .menu-list ul li {
+	height: 27px;
+	line-height: 27px;
+	margin-bottom: 23px;
+}
+.m-header .menu-wrap .menu-list ul li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.m-header .menu-wrap .menu-list ul li a .contents {
+	float: left;
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: 'NotoSansCJKkr-Regular','sans-serif';
+}
+.m-header .menu-wrap .menu-list ul li a .line-wrap {
+	width: 20px;
+    height: 20px;
+	float: right;
+	background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: cover;
+	background-image: url("../images/off.png");
+}
+.m-header .menu-wrap .footer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 14%;
+}
+.m-header .menu-wrap .footer .sns-link {
+	width: 100%;
+}
+.m-header .menu-wrap .footer .sns-link li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 6px;
+}
+.m-header .menu-wrap .footer .sns-link li:last-child {
+	margin-right: 0;
+}
+.m-header .menu-wrap .footer .sns-link li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.m-header .menu-wrap .footer .sns-link li a img {
+	width: 25px;
+	vertical-align: middle;
+}
+.m-header .menu-wrap .footer p {
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'NotoSansCJKkr-Regular','sans-serif';
+}
+/* Ŭ������  */
+.m-header .menu-wrap.active {
+	right: 0;
+}
+.m-header.active  {
+	background-color: transparent;
+}
+.m-header .menu-wrap .menu-list ul li a .line-wrap.active {
+	background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-position: center;
+	background-image: url("../images/on.png");
+}
